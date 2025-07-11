@@ -1,21 +1,17 @@
 ---
-tags: ["Best Practices"]
-
+tags: ['Best Practices']
 
 draft: false
-
 
 title: The Psychology of Code - Decoding the Impact on Development 🧠
 summary: Explore the psychological effects on coding, understand the impact of broken windows on culture, and discover defensive programming complexities.
 date: 2024-02-10
-images: ["/thumbnails/the-psychology-of-code.png"]
-
+images: ['/thumbnails/the-psychology-of-code.png']
 ---
 
 ## What is the Psychology Behind Code? 🤔
 
 Coding is a human activity. That's why understanding the mind is crucial for development. These psychological effects that can significantly influence the code and coding process.
-
 
 ## The Broken Windows Theory in Code Culture 🪟
 

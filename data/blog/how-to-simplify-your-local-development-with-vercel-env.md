@@ -1,15 +1,12 @@
 ---
-tags: ["Services", "CLI", "Tools"]
-
+tags: ['Services', 'CLI', 'Tools']
 
 draft: false
-
 
 title: Simple Management of Environment Variables with Vercel Env
 summary: Simplify your local development with Vercel Env! Manage environment variables effortlessly and enhance your workflow with this powerful CLI tool.
 date: 2023-05-10
-images: ["/thumbnails/how-to-simplify-your-local-development-with-vercel-env.png"]
-
+images: ['/thumbnails/how-to-simplify-your-local-development-with-vercel-env.png']
 ---
 
 Are you tired of manually setting up environment variables every time you work on a local development project? Vercel has a solution for you! Using Vercel Env from Vercel CLI can save you time and trouble, allowing you to work more efficiently and happily.

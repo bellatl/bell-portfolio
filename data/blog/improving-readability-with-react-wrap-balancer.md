@@ -1,15 +1,12 @@
 ---
-tags: ["React", "Next.js", "UI"]
-
+tags: ['React', 'Next.js', 'UI']
 
 draft: false
-
 
 title: React Wrap Balancer, An Easy Way to Improve Text Wrapping
 summary: Improve text wrapping in React and Next.js apps using React Wrap Balancer. Optimize readability and learn how to us this lightweight tool on your web pages.
 date: 2023-05-11
-images: ["/thumbnails/improving-readability-with-react-wrap-balancer.png"]
-
+images: ['/thumbnails/improving-readability-with-react-wrap-balancer.png']
 ---
 
 If you're a web developer, you know how important it is to make sure your website is easy to read and visually appealing. Text wrapping is one of those things that can make or break the user experience. Fortunately, React Wrap Balancer provides a simple solution to improve the wrapping of text content in React and Next.js apps.
@@ -42,7 +39,7 @@ Getting started with React Wrap Balancer is easy. Simply install React Wrap Bala
 And then wrap your text content with the `<Balancer>` component:
 
 ```tsx
-import Balancer from "react-wrap-balancer"
+import Balancer from 'react-wrap-balancer'
 
 function MyTitle() {
   return (

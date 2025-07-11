@@ -1,15 +1,12 @@
 ---
-tags: ["Next.js", "TailwindCSS", "UI"]
-
+tags: ['Next.js', 'TailwindCSS', 'UI']
 
 draft: false
-
 
 title: The Best Way to Organize Icons in a Next.js Site
 summary: Learn how to organize icons in your Next.js site for consistency and simplicity. Follow the convention of using a single file and Tailwind CSS for styling.
 date: 2023-05-12
-images: ["/thumbnails/the-best-way-to-organize-icons-in-a-nextjs-site.png"]
-
+images: ['/thumbnails/the-best-way-to-organize-icons-in-a-nextjs-site.png']
 ---
 
 If you're building a website or web app, you're probably going to use icons to help communicate information to your users. But how do you organize all those icons and make sure they're consistent across your site?
@@ -33,16 +30,10 @@ To organize our icons in a Next.js site, we're going to use a single file. This 
 We can define our icons in a file called `icons.tsx`. Here's an example:
 
 ```tsx title="icons.tsx"
-import { Logo } from "@/config/logo"
-import { GithubIcon } from "@/components/github-icon"
+import { Logo } from '@/config/logo'
+import { GithubIcon } from '@/components/github-icon'
 
-import {
-  X,
-  Copy,
-  ClipboardCheck,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react"
+import { X, Copy, ClipboardCheck, ChevronLeft, ChevronRight } from 'lucide-react'
 
 export const Icons = {
   logo: Logo,
@@ -63,10 +54,10 @@ Now that we have our icons organized in a single file, we can easily import and 
 Here's an example of how to import and use icons in a component:
 
 ```tsx
-import { Icons } from "@/components/icons"
- <div>
-    <Icons.chevronLeft />
-    <Icons.chevronRight/>
+import { Icons } from '@/components/icons'
+;<div>
+  <Icons.chevronLeft />
+  <Icons.chevronRight />
 </div>
 ```
 
@@ -83,13 +74,14 @@ We can style our icons using Tailwind by using the `className` attribute. Here's
 This will add a margin to the left of the icon and set its height and width to 4 pixels.
 
 ## Custom icons with image
+
 In website design, custom icons are essential components to improve user experience and navigation. For custom icons, we can define a simple component like this one for any image in Next.js:
 
 ```tsx title="logo.tsx"
-import logo from "@/public/favicon.svg"
-import Image from "next/image"
+import logo from '@/public/favicon.svg'
+import Image from 'next/image'
 
-export function Logo({ className = "h-6 w-6" }: { className?: string }) {
+export function Logo({ className = 'h-6 w-6' }: { className?: string }) {
   return (
     <div className={className}>
       <Image src={logo} alt="Logo" />
@@ -104,8 +96,8 @@ You can import that logo into `Icons.tsx` as shown in the "Using a Single File f
 
 Another way to create custom icons is to define them with svg code directly. In this case, we can define another component not only defines an icon, but also accepts `LucideProps` making it even more compatible and customizable.
 
-``` tsx title="github-icon.tsx"
-import { LucideProps } from "lucide-react"
+```tsx title="github-icon.tsx"
+import { LucideProps } from 'lucide-react'
 
 export function GithubIcon({ ...props }: LucideProps) {
   return (

@@ -1,15 +1,13 @@
 ---
-tags: ["TailwindCSS", "UI"]
-
+tags: ['TailwindCSS', 'UI']
 
 draft: false
-
 
 title: Consistent Descriptions with TailwindCSS Line Clamp
 summary: Learn how to use TailwindCSS Line Clamp plugin to create consistent descriptions for blog post cards. Upgrade to Tailwind 3.3 for this useful utility.
 date: 2023-05-09
-images: ["/thumbnails/using-tailwindcss-line-clamp-for-consistent-descriptions-on-blog-post-cards.png"]
-
+images:
+  ['/thumbnails/using-tailwindcss-line-clamp-for-consistent-descriptions-on-blog-post-cards.png']
 ---
 
 If you're creating a blog, you probably want to show a preview of your blog posts on your homepage. One of the most important parts of the preview is the post description. However, you may have noticed that descriptions of different lengths can break the layout, making the homepage look inconsistent. But worry not, there's a solution to this problem - the TailwindCSS Line Clamp plugin.
@@ -34,12 +32,11 @@ module.exports = {
     // ...
   },
   plugins: [
-    require("@tailwindcss/line-clamp"),
+    require('@tailwindcss/line-clamp'),
     // ...
   ],
 }
 ```
-
 
 ## Usage
 
@@ -47,11 +44,10 @@ You can use the `line-clamp-{n}` utilities to specify how many lines of text sho
 
 ```html
 <p class="line-clamp-3">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh et
-  nisi bibendum porttitor. Sed id pretium felis. In ultrices, velit vitae
-  imperdiet auctor, massa dolor dapibus lectus, sit amet luctus mi nunc in
-  velit. Aenean quis lobortis odio. Vivamus luctus ex non nulla consequat, a
-  tincidunt sapien facilisis.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh et nisi bibendum
+  porttitor. Sed id pretium felis. In ultrices, velit vitae imperdiet auctor, massa dolor dapibus
+  lectus, sit amet luctus mi nunc in velit. Aenean quis lobortis odio. Vivamus luctus ex non nulla
+  consequat, a tincidunt sapien facilisis.
 </p>
 ```
 
@@ -59,11 +55,10 @@ This will show only the first 3 lines of the paragraph and then add an ellipsis 
 
 ```html
 <p class="line-clamp-3 md:line-clamp-none">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh et
-  nisi bibendum porttitor. Sed id pretium felis. In ultrices, velit vitae
-  imperdiet auctor, massa dolor dapibus lectus, sit amet luctus mi nunc in
-  velit. Aenean quis lobortis odio. Vivamus luctus ex non nulla consequat, a
-  tincidunt sapien facilisis.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh et nisi bibendum
+  porttitor. Sed id pretium felis. In ultrices, velit vitae imperdiet auctor, massa dolor dapibus
+  lectus, sit amet luctus mi nunc in velit. Aenean quis lobortis odio. Vivamus luctus ex non nulla
+  consequat, a tincidunt sapien facilisis.
 </p>
 ```
 

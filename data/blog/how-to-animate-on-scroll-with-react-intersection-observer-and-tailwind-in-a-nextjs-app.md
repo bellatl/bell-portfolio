@@ -1,15 +1,15 @@
 ---
-tags: ["Next.js", "TailwindCSS", "UI"]
-
+tags: ['Next.js', 'TailwindCSS', 'UI']
 
 draft: false
-
 
 title: React Intersection Observer With Tailwind and Next.js
 summary: Learn how to animate on scroll in your Next.js app using React Intersection Observer and Tailwind CSS. Follow our step-by-step guide with code examples.
 date: 2023-01-25
-images: ["/thumbnails/how-to-animate-on-scroll-with-react-intersection-observer-and-tailwind-in-a-nextjs-app.png"]
-
+images:
+  [
+    '/thumbnails/how-to-animate-on-scroll-with-react-intersection-observer-and-tailwind-in-a-nextjs-app.png',
+  ]
 ---
 
 ## React Intersection observer for animate on scroll behavior

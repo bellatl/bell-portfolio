@@ -1,15 +1,12 @@
 ---
-tags: ["React"]
-
+tags: ['React']
 
 draft: false
-
 
 title: What is React Hydration?
 summary: Discover the process of React hydration and how it connects server-rendered HTML with client-side JavaScript to enhance web interactivity.
 date: 2024-04-30
-images: ["/thumbnails/what-is-react-hydration.png"]
-
+images: ['/thumbnails/what-is-react-hydration.png']
 ---
 
 ## Understanding React Hydration
@@ -25,9 +22,7 @@ React hydration is the process of taking a server-rendered HTML page and connect
 4. **Reusing the Existing DOM:** During hydration, React tries to reuse the existing DOM nodes instead of creating new ones. It compares the server-rendered HTML with the virtual DOM and updates only the necessary parts.
 5. **Interactivity:** After hydration, the web page becomes interactive. Users can now trigger events, update the UI, and interact with the application just like a traditional client-side rendered React app.
 
-
 ![React Hydration](/assets/react_hydration.png)
-
 
 ## Improved Performance
 

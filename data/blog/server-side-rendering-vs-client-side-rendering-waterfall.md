@@ -1,17 +1,13 @@
 ---
-tags: ["React"]
-
+tags: ['React']
 
 draft: false
-
 
 title: Server Side Rendering Vs Client Side Rendering Waterfall
 summary: Explore the impact of server-side rendering (SSR) and client-side rendering (CSR) on performance, focusing on the waterfall effect in React applications.
 date: 2024-06-20
-images: ["/thumbnails/server-side-rendering-vs-client-side-rendering-waterfall.png"]
-
+images: ['/thumbnails/server-side-rendering-vs-client-side-rendering-waterfall.png']
 ---
-
 
 ## What is Server Side Rendering (SSR)?
 
@@ -49,7 +45,6 @@ In contrast, with server-side rendering, the waterfall effect can be significant
    - **The `Comment` JS**: The browser fetches the JavaScript file(s) required for the `Comment` component.
 
 By rendering the initial content on the server, the waterfall is reduced to just two steps, potentially resulting in faster initial page loads and improved perceived performance.
-
 
 ## Conclusion
 

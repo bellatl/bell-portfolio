@@ -85,7 +85,6 @@ _JobSpy and JobsParser are also compatible with other job boards like LinkedIn, 
 While pandas seemed obvious (and I've given it a fair try), Google Sheets proved more flexible. Here's my filtering strategy:
 
 1. **Time Filter**: Last 7 days
-
    - Jobs older than a week have lower response rates
    - Fresh postings mean active hiring
 

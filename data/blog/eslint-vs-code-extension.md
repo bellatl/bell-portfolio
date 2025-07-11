@@ -1,15 +1,12 @@
 ---
-tags: ["Tools", "VS Code"]
-
+tags: ['Tools', 'VS Code']
 
 draft: false
-
 
 title: ESLint Extension for VS Code - Error Detection and Fixing
 summary: Simplify error detection and fixing in modern web development with the ESLint VS Code extension. Find out how it enhances code quality and saves you time. 🚀
 date: 2023-05-19
-images: ["/thumbnails/eslint-vs-code-extension.png"]
-
+images: ['/thumbnails/eslint-vs-code-extension.png']
 ---
 
 ## Find and Fix Errors Easily with the ESLint VS Code Extension!
@@ -19,8 +16,10 @@ Are you tired of spending countless hours searching for errors in your code? As 
 For a more in-depth exploration of why you should use ESLint, check out this other blog post [The Pros and Cons of Using ESLint for Web Development](https://www.franciscomoretti.com/blog/the-pros-and-cons-of-using-eslint). 📚
 
 ## Installation
-Follow one of these options to install it. 
--  Search for `dbaeumer.vscode-eslint` in VS Code Extensions panel and hit install.
+
+Follow one of these options to install it.
+
+- Search for `dbaeumer.vscode-eslint` in VS Code Extensions panel and hit install.
 - [Install via the Visual Studio Code Marketplace →](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 **Note:** To ensure that the Eslit VS Code extension works properly, make sure that you have ESLint installed and a ESLint config file named `.eslintrc` in your workspace.

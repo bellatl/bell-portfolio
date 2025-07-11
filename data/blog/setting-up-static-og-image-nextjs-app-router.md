@@ -1,15 +1,12 @@
 ---
-tags: ["Next.js"]
-
+tags: ['Next.js']
 
 draft: false
-
 
 title: Setting up a static OG Image in Next.js with App Router
 summary: Learn how to set up a static Open Graph (OG) image for Next.js using the App Router. Improve your site's appearance when shared on social networks.
 date: 2023-07-09
-images: ["/thumbnails/setting-up-static-og-image-nextjs-app-router.png"]
-
+images: ['/thumbnails/setting-up-static-og-image-nextjs-app-router.png']
 ---
 
 ## Why do you need a static OG image?
@@ -24,10 +21,10 @@ Next.js provides two methods for setting Open Graph and Twitter images: using im
 
 To set a route segment's shared image, follow these steps:
 
-1. Create an image file: 
+1. Create an image file:
    - For Open Graph, use the `opengraph-image.(jpg|jpeg|png|gif)` convention.
-   - For Twitter, use the `twitter-image.(jpg|jpeg|png|gif)` convention. IIf this file is not provided, `opengraph-image`  will be re-used for twitter.
-   
+   - For Twitter, use the `twitter-image.(jpg|jpeg|png|gif)` convention. IIf this file is not provided, `opengraph-image` will be re-used for twitter.
+
    You can choose the file type that suits your needs. For example, let's create an `opengraph-image.png` and a `twitter-image.png`.
 
 2. Place the image file in the respective route segment.
@@ -72,6 +69,7 @@ Here's an example of the `opengraph-image.alt.txt` file content:
 ```txt
 Happy Coding
 ```
+
 And here's an example of the `twitter-image.alt.txt` file content:
 
 ```txt
@@ -83,7 +81,6 @@ The alt text will be included in the `<head>` output for both the Open Graph and
 ```html
 <meta property="og:image:alt" content="Happy Coding" />
 ```
-
 
 ## File Tree View
 

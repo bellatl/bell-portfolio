@@ -1,15 +1,12 @@
 ---
-tags: ["Next.js", "Analytics"]
-
+tags: ['Next.js', 'Analytics']
 
 draft: false
-
 
 title: How to add Google Analytics 4 to a Next.js website
 summary: A comprehensive guide on setting up Google Analytics 4 (GA4) on a Next.js website. Track your site's performance, demographics, and boost optimization.
 date: 2022-05-14
-images: ["/thumbnails/how-to-set-up-google-analytics-on-a-nextjs-website.png"]
-
+images: ['/thumbnails/how-to-set-up-google-analytics-on-a-nextjs-website.png']
 ---
 
 ## Introduction
@@ -87,10 +84,10 @@ npx create-next-app --example with-google-analytics with-google-analytics-app
 Modify the `_app.js` or file to use `next/router` and the `gtag.js` scripts like it’s shown on the following file.
 
 ```javascript
-import { useEffect } from "react"
-import Script from "next/script"
-import { useRouter } from "next/router"
-import * as gtag from "../lib/gtag"
+import { useEffect } from 'react'
+import Script from 'next/script'
+import { useRouter } from 'next/router'
+import * as gtag from '../lib/gtag'
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -98,11 +95,11 @@ const App = ({ Component, pageProps }) => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)
     }
-    router.events.on("routeChangeComplete", handleRouteChange)
-    router.events.on("hashChangeComplete", handleRouteChange)
+    router.events.on('routeChangeComplete', handleRouteChange)
+    router.events.on('hashChangeComplete', handleRouteChange)
     return () => {
-      router.events.off("routeChangeComplete", handleRouteChange)
-      router.events.off("hashChangeComplete", handleRouteChange)
+      router.events.off('routeChangeComplete', handleRouteChange)
+      router.events.off('hashChangeComplete', handleRouteChange)
     }
   }, [router.events])
 
@@ -142,14 +139,14 @@ export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
-  window.gtag("config", GA_TRACKING_ID, {
+  window.gtag('config', GA_TRACKING_ID, {
     page_path: url,
   })
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({ action, category, label, value }) => {
-  window.gtag("event", action, {
+  window.gtag('event', action, {
     event_category: category,
     event_label: label,
     value: value,

@@ -1,19 +1,15 @@
 ---
-tags: ["Next.js", "Services"]
-
+tags: ['Next.js', 'Services']
 
 draft: false
-
 
 title: Next Conf 2021 Notes and Resources
 summary: Explore the key insights and resources from Next Conf 2021 and Next.js 12. Discover Next.js SDK, web performance strategies, ES Modules support, and more.
 date: 2021-11-13
-images: ["/thumbnails/next-conf-2021-notes-and-resources.png"]
-
+images: ['/thumbnails/next-conf-2021-notes-and-resources.png']
 ---
 
 Check [“The Future of React & Next.js”](https://www.youtube.com/watch?v=dMBYI7pTR4Q&list=PLBnKlKpPeagnJYpc5geAHU40ld5hk8i82) for an engaging keynote of the conference that features several demos. Also, visit the [official Next.js 12 page](https://nextjs.org/blog/next-12).
-
 
 ## The Next.js SDK
 

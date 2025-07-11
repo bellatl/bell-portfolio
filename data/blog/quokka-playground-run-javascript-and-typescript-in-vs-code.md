@@ -1,28 +1,29 @@
 ---
-tags: ["VS Code", "Tools", "JavaScript", "TypeScript", "Testing", "Debugging"]
-
+tags: ['VS Code', 'Tools', 'JavaScript', 'TypeScript', 'Testing', 'Debugging']
 
 draft: false
-
 
 title: Quokka Playground - Run JavaScript and TypeScript in VS Code
 summary: Discover the Quokka extension for Visual Studio Code, a valuable tool that simplifies code testing and learning in JavaScript and TypeScript development.
 date: 2023-07-04
-images: ["/thumbnails/quokka-playground-run-javascript-and-typescript-in-vs-code.png"]
-
+images: ['/thumbnails/quokka-playground-run-javascript-and-typescript-in-vs-code.png']
 ---
 
 ## Introduction
+
 When working on a large project, it's often necessary to test specific code snippets in isolation. In this blog post, we explore the Quokka extension for Visual Studio Code, a solution that simplifies code testing and learning in JavaScript and TypeScript.
 
 ## What is Quokka Playground? 🚀
+
 The Quokka extension provides a seamless testing experience within Visual Studio Code. With Quokka, you can easily create new files for trying out code using the command palette. As you type, Quokka automatically runs and displays the output of each `console.log` line, allowing you to observe results in real-time.
 
 Quokka isn't limited to JavaScript; it also supports TypeScript, making it a versatile tool for various web development scenarios.
 
-## Installation 
+## Installation
+
 Follow one of these options to install it.
--  Search for `WallabyJs.quokka-vscode` in VS Code Extensions panel and hit install.
+
+- Search for `WallabyJs.quokka-vscode` in VS Code Extensions panel and hit install.
 - [Install via the Visual Studio Code Marketplace →](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode).
 
 ## Enhance Your Learning Journey 📚
@@ -32,17 +33,17 @@ Quokka is an excellent companion for practicing algorithms and enhancing your ov
 Furthermore, Quokka allows you to import and test node modules that are already a part of your project, expanding its usefulness beyond isolated code snippets.
 
 ## How Quokka Enhances JavaScript Development 🧪
+
 Quokka introduces a practical approach to JavaScript development by providing instant code evaluation, conveniently displaying the output alongside your code. This eliminates the need to switch between files or browsers for testing, streamlining your workflow.
 
 You can activate Quokka on a per-file basis or selectively evaluate specific code sections. This flexibility empowers you to experiment and test parts of your code without disrupting the entire project.
 
 ```typescript
 // Sample JavaScript code
-const add = (a, b) => a + b;
+const add = (a, b) => a + b
 
-add(2, 3); // Output: 5
+add(2, 3) // Output: 5
 ```
-
 
 ## Features at a Glance 🧩
 
@@ -50,7 +51,8 @@ Quokka comes with a range of features designed to enhance your development workf
 
 ### Live Feedback for JS and TS
 
-Quokka provides real-time execution feedback within the editor. You can open a new Quokka file or restart Quokka on an existing file using convenient keyboard shortcuts 
+Quokka provides real-time execution feedback within the editor. You can open a new Quokka file or restart Quokka on an existing file using convenient keyboard shortcuts
+
 - `Cmd/Ctrl + K  J` for JavaScript
 - `Cmd/Ctrl + K  T` for TypeScript
 
@@ -73,8 +75,6 @@ With the Quokka Value Explorer, you gain valuable insights into your code's beha
 ### Time Machine: Debugging Made Easier
 
 Quokka's "Time Machine" feature allows you to debug files step by step, providing a powerful tool to pinpoint and resolve issues in your code. Additionally, Quokka enables you to effortlessly share your scratchpad via [codeclip.io](http://codeclip.io/) with just a single button click, promoting collaboration and knowledge sharing among developers.
-
-
 
 ## Conclusion
 

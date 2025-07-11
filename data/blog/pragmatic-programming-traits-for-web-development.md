@@ -1,15 +1,12 @@
 ---
-tags: ["Best Practices"]
-
+tags: ['Best Practices']
 
 draft: false
-
 
 title: Pragmatic Programming Traits for Web Development
 summary: Uncover the traits of a Pragmatic Programmer and learn how to apply them in web development using React and TypeScript examples.
 date: 2024-02-08
-images: ["/thumbnails/pragmatic-programming-traits-for-web-development.png"]
-
+images: ['/thumbnails/pragmatic-programming-traits-for-web-development.png']
 ---
 
 ## What is Pragmatic Programming?

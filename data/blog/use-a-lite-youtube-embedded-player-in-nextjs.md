@@ -1,15 +1,12 @@
 ---
-tags: ["Next.js", "HTML", "Performance"]
-
+tags: ['Next.js', 'HTML', 'Performance']
 
 draft: false
-
 
 title: Use a Lite YouTube Embedded Player in Next.js
 summary: Learn how to integrate a lite YouTube player in Next.js for improved performance using an iframe player or the react-lite-youtube-embed package.
 date: 2021-10-24
-images: ["/thumbnails/use-a-lite-youtube-embedded-player-in-nextjs.png"]
-
+images: ['/thumbnails/use-a-lite-youtube-embedded-player-in-nextjs.png']
 ---
 
 ## Using a Youtube Embedded Player in a Next.js application
@@ -28,7 +25,7 @@ The code to use that first method is something like this.
 
 ```javascript
 <iframe
-  src={"https://www.youtube.com/embed/" + video_id}
+  src={'https://www.youtube.com/embed/' + video_id}
   title={video_title}
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -79,19 +76,14 @@ npm install react-lite-youtube-embed -S
 Secondly, import the packages
 
 ```javascript
-import LiteYouTubeEmbed from "react-lite-youtube-embed"
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css"
+import LiteYouTubeEmbed from 'react-lite-youtube-embed'
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 ```
 
 Finally, use the `LiteYouTubeEmbed` component. This component also has the option to set the aspect ratio in it, which is extremely useful.
 
 ```html
-<LiteYouTubeEmbed
-  aspectHeight="{9}"
-  aspectWidth="{16}"
-  id="{video_id}"
-  title="{video_title}"
-/>
+<LiteYouTubeEmbed aspectHeight="{9}" aspectWidth="{16}" id="{video_id}" title="{video_title}" />
 ```
 
 It also has some privacy settings enabled by default, it will try to reach `youtube-nocookie.com`. Those might conflict with your Next.js config ContentSecurityPolicy. You might need to add it the permission to reach that page to the rules.

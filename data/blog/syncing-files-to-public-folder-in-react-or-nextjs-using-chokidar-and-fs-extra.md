@@ -1,15 +1,13 @@
 ---
-tags: ["Next.js", "React"]
-
+tags: ['Next.js', 'React']
 
 draft: false
-
 
 title: Sync Files to Public Folder in Next.js using Chokidar
 summary: Learn how to automatically sync files to the public folder in React or Next.js using Chokidar and fs-extra. Sync your assets with this step-by-step tutorial.
 date: 2023-04-27
-images: ["/thumbnails/syncing-files-to-public-folder-in-react-or-nextjs-using-chokidar-and-fs-extra.png"]
-
+images:
+  ['/thumbnails/syncing-files-to-public-folder-in-react-or-nextjs-using-chokidar-and-fs-extra.png']
 ---
 
 When building a website with React or Next.js, you may have some assets (e.g. images, videos, or other static files) that need to be accessible on the server. These assets can be stored in a folder of your choice, but they won't be automatically included in the build process. In this tutorial, we'll learn how to use Chokidar and fs-extra to automatically sync files to the public folder, making them available to your website.
@@ -36,15 +34,15 @@ pnpm install chokidar fs-extra --save-dev
 We'll create a script that watches for file changes in a source directory and syncs them to a destination directory. Create a new file called `sync.js` in your project directory and add the following code:
 
 ```js
-const chokidar = require("chokidar")
-const fs = require("fs-extra")
-const path = require("path")
+const chokidar = require('chokidar')
+const fs = require('fs-extra')
+const path = require('path')
 
-const source = "your/source/directory"
-const destination = "your/destination/directory" // Usually "./public/assets/" or "./public/"
+const source = 'your/source/directory'
+const destination = 'your/destination/directory' // Usually "./public/assets/" or "./public/"
 
 // Check if --watch flag is present in the command line arguments
-const watch = process.argv.includes("--watch")
+const watch = process.argv.includes('--watch')
 
 // Copy files on startup
 fs.copySync(source, destination, { recursive: true })
@@ -57,11 +55,11 @@ if (watch) {
   })
 
   // Watch for all events in source folder
-  watcher.on("all", (event, filePath) => {
+  watcher.on('all', (event, filePath) => {
     console.log(`${event}: ${filePath}`)
     const relativePath = path.relative(source, filePath)
     const destinationPath = path.join(destination, relativePath)
-    if (event === "unlink") {
+    if (event === 'unlink') {
       fs.removeSync(destinationPath)
     } else {
       fs.copySync(filePath, destinationPath)
