@@ -12,7 +12,7 @@ const siteMetadata = {
 
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: process.env.NEXT_PUBLIC_APP_URL,
+  siteUrl: 'https://westatlantaweb.com',
   siteRepo: 'https://github.com/bellatl/bell-portfolio',
   siteLogo: `${process.env.BASE_PATH || ''}/static/logo.svg`,
   siteLogoDark: `${process.env.BASE_PATH || ''}/static/logo-dark.svg`,
